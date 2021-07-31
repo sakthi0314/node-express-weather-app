@@ -20,7 +20,7 @@ const forecast = (lat, long, callback) => {
             summary: res.body.current.weather_descriptions,
             temperature: res.body.current.temperature,
           },
-          error
+          undefined
         );
       }
     }
